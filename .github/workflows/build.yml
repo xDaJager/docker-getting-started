@@ -11,10 +11,12 @@ jobs:
       with:
         node-version: '14'
     - run: |
+        cd app
         set SQLITE_DB_LOCATION = `pwd`
         yarn
         yarn test
-        pwd    
+        pwd
+      working-directory: ./app 
 
 
   build:
