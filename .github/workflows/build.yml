@@ -12,6 +12,7 @@ jobs:
         node-version: '14'
     - run: |
         set SQLITE_DB_LOCATION = `pwd`
+        echo $SQLITE_DB_LOCATION
         yarn
         yarn test
         pwd
