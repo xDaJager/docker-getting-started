@@ -11,8 +11,7 @@ jobs:
       with:
         node-version: '14'
     - run: |
-        pwd
-        mkdir todos
+        set SQLITE_DB_LOCATION = `pwd`
         yarn
         yarn test
         pwd    
