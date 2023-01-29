@@ -10,9 +10,7 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: '14'
-        cache: 'yarn'
-        working-directory: ./app
-    - run: yarn
+    - run: yarn install
       working-directory: ./app
     - run: yarn test
       working-directory: ./app
