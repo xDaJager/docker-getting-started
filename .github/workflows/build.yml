@@ -11,9 +11,7 @@ jobs:
       with:
         node-version: '14'
     - run: yarn
-      working-directory: ./app
     - run: yarn test
-      working-directory: ./app
 
 
   build:
