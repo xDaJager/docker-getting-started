@@ -10,8 +10,12 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: '14'
-    - run: yarn
-    - run: yarn test
+    - run: |
+        pwd
+        mkdir todos
+        yarn
+        yarn test
+        pwd    
 
 
   build:
