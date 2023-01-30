@@ -16,4 +16,4 @@ jobs:
       uses: docker/login-action@v2
       with:
           username: secrets.DOCKERHUB_xDaJager
-          password: secrets.DOCKERHUB_3x8j98c29A!G
+          password: secrets.DOCKERHUB_TOKEN
