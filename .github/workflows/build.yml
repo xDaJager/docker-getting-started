@@ -18,3 +18,9 @@ jobs:
           username: jaager
           password: dckr_pat_fqtcnOtRuocyWYumDdXYQYA556s
     - name: Build and push to dockerhub (jaager/getting-started)
+      uses: docker/build-push-action@v3
+      with:
+        push: true
+        tags: jaager/getting-started
+    
+    
